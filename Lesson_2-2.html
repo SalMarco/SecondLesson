@@ -12498,7 +12498,17 @@ Coefficients:
 </div>
 </div>
 
+</div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Exponential-fit">Exponential fit<a class="anchor-link" href="#Exponential-fit">&#182;</a></h2><p>In the last part of this lesson we'll see how to implement a function ad try to find the best parameters in order to obtain the best fit.</p>
+<p>For this scope we'll use the function <code>optimize.minimize</code> of <code>sicpy</code> (<a href="https://docs.scipy.org/doc/scipy/reference/generated/scipy.optimize.minimize.html">library page</a>).</p>
+
+</div>
+</div>
+</div></section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">In&nbsp;[14]:</div>
@@ -12596,7 +12606,134 @@ Coefficients:
 </div>
 </div>
 
-</div></section></section>
+</div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Random-Forest-Classificator">Random Forest Classificator<a class="anchor-link" href="#Random-Forest-Classificator">&#182;</a></h2><p>Now we'll use a rando forest on th on the breast cancer dataset (<a href="http://scikit-learn.org/stable/datasets/index.html#breast-cancer-dataset">Man. Page</a>).</p>
+
+</div>
+</div>
+</div></section><section>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[76]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.datasets</span> <span class="k">import</span> <span class="n">load_breast_cancer</span>
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="kn">from</span> <span class="nn">sklearn.ensemble</span> <span class="k">import</span> <span class="n">RandomForestClassifier</span> <span class="k">as</span> <span class="n">rfc</span>
+<span class="n">data</span> <span class="o">=</span> <span class="n">load_breast_cancer</span><span class="p">()</span>
+<span class="n">df_X</span><span class="o">=</span><span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">data</span><span class="o">.</span><span class="n">data</span><span class="p">)</span>
+<span class="n">df_Y</span><span class="o">=</span><span class="n">data</span><span class="o">.</span><span class="n">target</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;shape di df_X:&#39;</span><span class="p">,</span><span class="n">df_X</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;shape di df_Y:&#39;</span><span class="p">,</span><span class="n">df_Y</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>
+<span class="n">nrow</span><span class="o">=</span><span class="n">df</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+<span class="n">ntest</span><span class="o">=</span><span class="mi">50</span>
+<span class="n">df_X_train</span><span class="o">=</span><span class="n">df_X</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="n">nrow</span><span class="o">-</span><span class="n">ntest</span><span class="p">)</span>
+<span class="n">df_Y_train</span><span class="o">=</span><span class="n">df_Y</span><span class="p">[</span><span class="mi">0</span><span class="p">:(</span><span class="n">nrow</span><span class="o">-</span><span class="n">ntest</span><span class="p">)]</span>
+<span class="n">df_X_test</span><span class="o">=</span><span class="n">df_X</span><span class="o">.</span><span class="n">tail</span><span class="p">(</span><span class="n">ntest</span><span class="p">)</span>
+<span class="n">df_Y_test</span><span class="o">=</span><span class="n">df_Y</span><span class="p">[(</span><span class="n">nrow</span><span class="o">-</span><span class="n">ntest</span><span class="p">):</span><span class="n">nrow</span><span class="p">]</span>
+<span class="n">df_Y_test</span><span class="o">.</span><span class="n">shape</span>
+<span class="n">model</span> <span class="o">=</span> <span class="n">rfc</span><span class="p">(</span><span class="n">n_jobs</span><span class="o">=-</span><span class="mi">1</span><span class="p">,</span><span class="n">oob_score</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span><span class="n">n_estimators</span><span class="o">=</span><span class="mi">100</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Model parameters:&#39;</span><span class="p">,</span><span class="n">model</span><span class="p">)</span>
+<span class="n">model</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">df_X_train</span><span class="p">,</span><span class="n">df_Y_train</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Importance of the features&#39;</span><span class="p">,</span><span class="n">model</span><span class="o">.</span><span class="n">feature_importances_</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Acuracy od the model during train is: </span><span class="si">%i%s</span><span class="s1">&#39;</span><span class="o">%</span><span class="p">(</span><span class="nb">int</span><span class="p">(</span><span class="n">model</span><span class="o">.</span><span class="n">oob_score_</span><span class="o">*</span><span class="mi">100</span><span class="p">),</span><span class="s1">&#39;%&#39;</span><span class="p">))</span>
+<span class="n">pred</span><span class="o">=</span><span class="n">model</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">df_X_test</span><span class="p">)</span>
+<span class="n">diff</span><span class="o">=</span><span class="n">pred</span><span class="o">-</span><span class="n">df_Y_test</span>
+<span class="n">diff</span><span class="o">=</span><span class="nb">sum</span><span class="p">(</span><span class="nb">abs</span><span class="p">(</span><span class="n">diff</span><span class="p">))</span>
+<span class="n">acc</span><span class="o">=</span><span class="mi">1</span><span class="o">-</span><span class="n">diff</span><span class="o">/</span><span class="nb">len</span><span class="p">(</span><span class="n">df_Y_test</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Accuracy of the model on the test set: </span><span class="si">%i%s</span><span class="s1">&#39;</span><span class="o">%</span><span class="p">(</span><span class="nb">int</span><span class="p">(</span><span class="n">acc</span><span class="o">*</span><span class="mi">100</span><span class="p">),</span><span class="s1">&#39;%&#39;</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Accuracy of the model on the test set: </span><span class="si">%i%s</span><span class="s1">&#39;</span><span class="o">%</span><span class="p">(</span><span class="nb">int</span><span class="p">(</span><span class="n">model</span><span class="o">.</span><span class="n">score</span><span class="p">(</span><span class="n">df_X_test</span><span class="p">,</span><span class="n">df_Y_test</span><span class="p">)</span><span class="o">*</span><span class="mi">100</span><span class="p">),</span><span class="s1">&#39;%&#39;</span><span class="p">))</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>shape di df_X: (569, 30)
+shape di df_Y: (569,)
+Model parameters: RandomForestClassifier(bootstrap=True, class_weight=None, criterion=&#39;gini&#39;,
+            max_depth=None, max_features=&#39;auto&#39;, max_leaf_nodes=None,
+            min_impurity_decrease=0.0, min_impurity_split=None,
+            min_samples_leaf=1, min_samples_split=2,
+            min_weight_fraction_leaf=0.0, n_estimators=100, n_jobs=-1,
+            oob_score=True, random_state=None, verbose=0, warm_start=False)
+Importance of the features [0.04467596 0.01075461 0.02521725 0.03759936 0.01007088 0.01563074
+ 0.05666084 0.06707178 0.00097256 0.00657964 0.01271163 0.00310415
+ 0.01920046 0.03930833 0.00582548 0.00606817 0.00673157 0.01100994
+ 0.00608224 0.00251472 0.08573789 0.01703088 0.14791038 0.15896544
+ 0.01803071 0.03009278 0.04156347 0.10038717 0.00434657 0.0081444 ]
+Acuracy od the model during train is: 93%
+Accuracy of the model on the test set: 52%
+Accuracy of the model on the test set: 52%
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div><div class="fragment">
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="o">**</span><span class="n">NOTE</span><span class="o">**</span><span class="p">:</span> <span class="n">we</span> <span class="n">can</span> <span class="n">do</span> <span class="n">the</span> <span class="n">same</span> <span class="n">analysis</span> <span class="ow">in</span> <span class="n">a</span> <span class="n">easier</span> <span class="n">way</span><span class="o">.</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+</div></div><div class="fragment">
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[79]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.model_selection</span> <span class="k">import</span> <span class="n">cross_val_score</span>
+<span class="n">model</span> <span class="o">=</span> <span class="n">rfc</span><span class="p">(</span><span class="n">n_jobs</span><span class="o">=-</span><span class="mi">1</span><span class="p">,</span><span class="n">n_estimators</span><span class="o">=</span><span class="mi">10</span><span class="p">)</span>
+<span class="n">scores</span> <span class="o">=</span> <span class="n">cross_val_score</span><span class="p">(</span><span class="n">model</span><span class="p">,</span> <span class="n">data</span><span class="o">.</span><span class="n">data</span><span class="p">,</span> <span class="n">data</span><span class="o">.</span><span class="n">target</span><span class="p">,</span> <span class="n">cv</span><span class="o">=</span><span class="mi">10</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Accuracy: </span><span class="si">%0.2f</span><span class="s2"> (+/- </span><span class="si">%0.2f</span><span class="s2">)&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">scores</span><span class="o">.</span><span class="n">mean</span><span class="p">(),</span> <span class="n">scores</span><span class="o">.</span><span class="n">std</span><span class="p">()</span> <span class="o">*</span> <span class="mi">2</span><span class="p">))</span>                                            
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Accuracy: 0.96 (+/- 0.06)
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
 </div>
 </div>
 
