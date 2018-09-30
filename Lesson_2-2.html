@@ -11958,7 +11958,7 @@ a.anchor-link {
 </div></section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[21]:</div>
+<div class="prompt input_prompt">In&nbsp;[3]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
@@ -12076,7 +12076,7 @@ The type of diabetes.target: &lt;class &#39;numpy.ndarray&#39;&gt; (442,)
 </div><div class="fragment">
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[26]:</div>
+<div class="prompt input_prompt">In&nbsp;[4]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Use only one feature</span>
@@ -12133,7 +12133,7 @@ Dimension of diabetes_y_test: (20,)
 </div></div><div class="fragment">
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[27]:</div>
+<div class="prompt input_prompt">In&nbsp;[5]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Create linear regression object</span>
@@ -12169,7 +12169,7 @@ Dimension of diabetes_y_test: (20,)
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>Coefficients: 
- [938.23786125]
+ [938.23786125] 152.91886182616167
 Mean squared error: 2548.07
 Variance score: 0.47
 </pre>
@@ -12182,7 +12182,7 @@ Variance score: 0.47
 </div></div><div class="fragment">
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[44]:</div>
+<div class="prompt input_prompt">In&nbsp;[6]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Plot outputs</span>
@@ -12238,7 +12238,7 @@ Variance score: 0.47
 </div></section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[76]:</div>
+<div class="prompt input_prompt">In&nbsp;[9]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
@@ -12264,7 +12264,6 @@ Variance score: 0.47
 <span class="n">d_Y_test</span> <span class="o">=</span> <span class="n">d_Y</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="o">-</span><span class="n">testDim</span><span class="p">:]</span>
 <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Dimension of d_Y_train:&#39;</span><span class="p">,</span><span class="n">d_Y_train</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Dimension of d_Y_test:&#39;</span><span class="p">,</span><span class="n">d_Y_test</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>
-<span class="n">d_X</span>
 </pre></div>
 
 </div>
@@ -12289,35 +12288,13 @@ Dimension of d_Y_test: (20, 1)
 </div>
 </div>
 
-<div class="output_area">
-
-<div class="prompt"></div>
-
-
-
-
-
- 
- 
-<div id="4d1abbe2-cce4-4892-9b47-ed9c74c399aa"></div>
-<div class="output_subarea output_widget_view ">
-<script type="text/javascript">
-var element = $('#4d1abbe2-cce4-4892-9b47-ed9c74c399aa');
-</script>
-<script type="application/vnd.jupyter.widget-view+json">
-{"model_id": "74e37430468c457b918cd4b019f6403f", "version_major": 2, "version_minor": 0}
-</script>
-</div>
-
-</div>
-
 </div>
 </div>
 
 </div><div class="fragment">
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[117]:</div>
+<div class="prompt input_prompt">In&nbsp;[10]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Create linear regression object</span>
@@ -12365,7 +12342,7 @@ Variance score: 0.47
 </div></div><div class="fragment">
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[70]:</div>
+<div class="prompt input_prompt">In&nbsp;[11]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Plot outputs</span>
@@ -12417,7 +12394,7 @@ Variance score: 0.47
 </div></section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[119]:</div>
+<div class="prompt input_prompt">In&nbsp;[12]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="o">%%</span>R <span class="o">-</span>i df<span class="p">,</span>d_Y
@@ -12454,6 +12431,33 @@ df_Test <span class="o">%&gt;%</span>
 <div class="output_wrapper">
 <div class="output">
 
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stderr output_text">
+<pre>/anaconda3/lib/python3.6/site-packages/rpy2/rinterface/__init__.py:145: RRuntimeWarning: 
+Attaching package: ‘dplyr’
+
+
+  warnings.warn(x, RRuntimeWarning)
+/anaconda3/lib/python3.6/site-packages/rpy2/rinterface/__init__.py:145: RRuntimeWarning: The following objects are masked from ‘package:stats’:
+
+    filter, lag
+
+
+  warnings.warn(x, RRuntimeWarning)
+/anaconda3/lib/python3.6/site-packages/rpy2/rinterface/__init__.py:145: RRuntimeWarning: The following objects are masked from ‘package:base’:
+
+    intersect, setdiff, setequal, union
+
+
+  warnings.warn(x, RRuntimeWarning)
+</pre>
+</div>
+</div>
 
 <div class="output_area">
 
@@ -12497,7 +12501,7 @@ Coefficients:
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[129]:</div>
+<div class="prompt input_prompt">In&nbsp;[14]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
@@ -12525,16 +12529,16 @@ Coefficients:
 <span class="n">res</span> <span class="o">=</span> <span class="n">scipy</span><span class="o">.</span><span class="n">optimize</span><span class="o">.</span><span class="n">minimize</span><span class="p">(</span><span class="n">lsq</span><span class="p">,</span> <span class="n">guesses</span><span class="p">)</span>
 
 <span class="nb">print</span><span class="p">(</span><span class="n">res</span><span class="o">.</span><span class="n">message</span><span class="p">)</span>
-<span class="c1"># &#39;Optimization terminated successfully.&#39;</span>
 
 <span class="nb">print</span><span class="p">(</span><span class="n">res</span><span class="o">.</span><span class="n">x</span><span class="p">)</span>
-<span class="c1"># [ 0.97336709  0.98685365 -0.07998282]</span>
 
 <span class="nb">print</span><span class="p">([</span><span class="n">lsq</span><span class="p">(</span><span class="n">guesses</span><span class="p">),</span> <span class="n">lsq</span><span class="p">(</span><span class="n">res</span><span class="o">.</span><span class="n">x</span><span class="p">)])</span>
-<span class="c1"># [7761.0093358076601, 13.055053196410928]</span>
+<span class="c1">#Reorder of variabiles</span>
 <span class="n">baskets</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">sort</span><span class="p">(</span><span class="n">baskets</span><span class="p">)</span>
 <span class="n">scaling_factor</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">sort</span><span class="p">(</span><span class="n">scaling_factor</span><span class="p">)</span>
+<span class="c1">#Prevision</span>
 <span class="n">prev</span><span class="o">=</span><span class="n">pred</span><span class="p">(</span><span class="n">res</span><span class="o">.</span><span class="n">x</span><span class="p">)</span>
+<span class="c1">#Plot</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">baskets</span><span class="p">,</span><span class="n">scaling_factor</span><span class="p">,</span><span class="n">color</span><span class="o">=</span><span class="s1">&#39;black&#39;</span><span class="p">)</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">baskets</span><span class="p">,</span><span class="n">prev</span><span class="p">)</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">show</span>
@@ -12563,7 +12567,7 @@ Coefficients:
 
 <div class="output_area">
 
-<div class="prompt output_prompt">Out[129]:</div>
+<div class="prompt output_prompt">Out[14]:</div>
 
 
 
