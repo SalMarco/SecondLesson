@@ -11946,13 +11946,14 @@ Fior the moment our focus is on the first point, in oder to start usign proper a
 </div></section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[1]:</div>
+<div class="prompt input_prompt">In&nbsp;[3]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
 <span class="c1">#Creation of an array</span>
 <span class="n">ar1</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">])</span>
 <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;type di ar1&#39;</span><span class="p">,</span><span class="nb">type</span><span class="p">(</span><span class="n">ar1</span><span class="p">))</span>
+<span class="n">ar1</span>
 </pre></div>
 
 </div>
@@ -11974,13 +11975,26 @@ Fior the moment our focus is on the first point, in oder to start usign proper a
 </div>
 </div>
 
+<div class="output_area">
+
+<div class="prompt output_prompt">Out[3]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>array([1, 2, 3])</pre>
+</div>
+
+</div>
+
 </div>
 </div>
 
 </div><div class="fragment">
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[10]:</div>
+<div class="prompt input_prompt">In&nbsp;[4]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#Use shape to see the dimension of ar1</span>
@@ -12017,27 +12031,13 @@ You must use .shape without brackets
 </div>
 </div>
 
-<div class="output_area">
-
-<div class="prompt"></div>
-
-
-
-
-<div class="output_text output_subarea ">
-<pre>array([[1, 2, 3],
-       [4, 5, 6]])</pre>
-</div>
-
-</div>
-
 </div>
 </div>
 
 </div></div><div class="fragment">
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[6]:</div>
+<div class="prompt input_prompt">In&nbsp;[5]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#Creation of a multimensional array</span>
@@ -12070,7 +12070,7 @@ You must use .shape without brackets
 
 <div class="output_area">
 
-<div class="prompt output_prompt">Out[6]:</div>
+<div class="prompt output_prompt">Out[5]:</div>
 
 
 
@@ -12096,7 +12096,7 @@ You must use .shape without brackets
 </div></div><div class="fragment">
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[7]:</div>
+<div class="prompt input_prompt">In&nbsp;[6]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#Creatiomn of a matrix</span>
@@ -12139,7 +12139,7 @@ You must use .shape without brackets
 
 <div class="output_area">
 
-<div class="prompt output_prompt">Out[7]:</div>
+<div class="prompt output_prompt">Out[6]:</div>
 
 
 
@@ -12166,7 +12166,7 @@ You must use .shape without brackets
 </div><div class="fragment">
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[7]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">ar2</span><span class="p">)</span>
@@ -12177,6 +12177,41 @@ You must use .shape without brackets
 </pre></div>
 
 </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>[[1 2 3]
+ [4 5 6]]
+[[1 2 3]
+ [1 1 1]]
+</pre>
+</div>
+</div>
+
+<div class="output_area">
+
+<div class="prompt output_prompt">Out[7]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>array([[1, 2, 3],
+       [1, 1, 1]])</pre>
+</div>
+
+</div>
+
 </div>
 </div>
 
@@ -12192,7 +12227,7 @@ You must use .shape without brackets
 </div></section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[8]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">ap1</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">append</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">],</span> <span class="p">[[</span><span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">],</span> <span class="p">[</span><span class="mi">7</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">9</span><span class="p">]])</span>
@@ -12205,6 +12240,29 @@ You must use .shape without brackets
 </pre></div>
 
 </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>[1 2 3 4 5 6 7 8 9] &lt;class &#39;numpy.ndarray&#39;&gt;
+[[1 2 3]
+ [4 5 6]
+ [7 8 9]] &lt;class &#39;numpy.ndarray&#39;&gt;
+[[1 2 3 4 5 6]
+ [1 1 1 7 8 9]] &lt;class &#39;numpy.ndarray&#39;&gt;
+</pre>
+</div>
+</div>
+
 </div>
 </div>
 
@@ -12221,7 +12279,7 @@ You must use .shape without brackets
 </div></section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[9]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">a</span><span class="o">=</span><span class="p">[</span><span class="n">i</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">10000</span><span class="p">)]</span>
@@ -12234,10 +12292,30 @@ You must use .shape without brackets
 </div>
 </div>
 
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>54.4 µs ± 3.74 µs per loop (mean ± std. dev. of 7 runs, 100 loops each)
+The slowest run took 5.55 times longer than the fastest. This could mean that an intermediate result is being cached.
+7.67 µs ± 6.69 µs per loop (mean ± std. dev. of 7 runs, 100 loops each)
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
 </div><div class="fragment">
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[10]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="o">%%</span>R
@@ -12251,10 +12329,32 @@ d<span class="o">=</span><span class="kt">data.frame</span><span class="p">(</sp
 </div>
 </div>
 
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+
+
+<div class="output_text output_subarea ">
+<pre>[1] &#34;integer&#34;
+[1] &#34;data.frame&#34;
+</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
 </div></div><div class="fragment">
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[11]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="o">%%</span><span class="k">timeit</span> -n 100
@@ -12265,10 +12365,28 @@ d<span class="o">=</span><span class="kt">data.frame</span><span class="p">(</sp
 </div>
 </div>
 
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>1.6 ms ± 277 µs per loop (mean ± std. dev. of 7 runs, 100 loops each)
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
 </div></div><div class="fragment">
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[12]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="o">%%</span><span class="k">timeit</span> -n 100
@@ -12276,6 +12394,24 @@ d<span class="o">=</span><span class="kt">data.frame</span><span class="p">(</sp
 </pre></div>
 
 </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>2.26 ms ± 158 µs per loop (mean ± std. dev. of 7 runs, 100 loops each)
+</pre>
+</div>
+</div>
+
 </div>
 </div>
 
@@ -12292,7 +12428,7 @@ d<span class="o">=</span><span class="kt">data.frame</span><span class="p">(</sp
 </div></section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[11]:</div>
+<div class="prompt input_prompt">In&nbsp;[13]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
@@ -12332,6 +12468,11 @@ d<span class="o">=</span><span class="kt">data.frame</span><span class="p">(</sp
 1  2  5
 2  3  6 
  &lt;class &#39;pandas.core.frame.DataFrame&#39;&gt;
+We can add columns afterward
+   a  b  c
+0  1  4  0
+1  2  5  0
+2  3  6  0
             max_speed  shield
 cobra               1       2
 viper               4       5
@@ -12351,13 +12492,13 @@ sidewinder          7       8
 
  
  
-<div id="34ded481-e033-4987-9ac8-9f9aeef5fc3f"></div>
+<div id="4e519f21-7be9-4ed0-b951-7a094461d983"></div>
 <div class="output_subarea output_widget_view ">
 <script type="text/javascript">
-var element = $('#34ded481-e033-4987-9ac8-9f9aeef5fc3f');
+var element = $('#4e519f21-7be9-4ed0-b951-7a094461d983');
 </script>
 <script type="application/vnd.jupyter.widget-view+json">
-{"model_id": "46933e97c39a4825a03192c7dc5675e6", "version_major": 2, "version_minor": 0}
+{"model_id": "4fd2d782cd5449129ff681cd74c64bda", "version_major": 2, "version_minor": 0}
 </script>
 </div>
 
@@ -12378,7 +12519,7 @@ var element = $('#34ded481-e033-4987-9ac8-9f9aeef5fc3f');
 </div></section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[14]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">dfFromArray</span><span class="o">=</span><span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">ap2</span><span class="p">)</span><span class="c1">#,columns=[&#39;pippo&#39;,&#39;pluto&#39;,&#39;paperino&#39;])</span>
@@ -12386,6 +12527,35 @@ var element = $('#34ded481-e033-4987-9ac8-9f9aeef5fc3f');
 </pre></div>
 
 </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+
+
+
+ 
+ 
+<div id="12283a8a-7cdf-466b-b033-2d68dc6ce48d"></div>
+<div class="output_subarea output_widget_view ">
+<script type="text/javascript">
+var element = $('#12283a8a-7cdf-466b-b033-2d68dc6ce48d');
+</script>
+<script type="application/vnd.jupyter.widget-view+json">
+{"model_id": "c5ba420f65be4b138530af640ff0b047", "version_major": 2, "version_minor": 0}
+</script>
+</div>
+
+</div>
+
 </div>
 </div>
 
@@ -12408,13 +12578,14 @@ var element = $('#34ded481-e033-4987-9ac8-9f9aeef5fc3f');
 </div></section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[15]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#%qtconsole</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="o">%</span><span class="k">qtconsole</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">df</span><span class="p">)</span>
 <span class="n">df</span><span class="o">.</span><span class="n">index</span>
 <span class="n">df</span><span class="o">.</span><span class="n">values</span>
+<span class="n">df</span><span class="o">.</span><span class="n">columns</span><span class="p">()</span>
 <span class="n">df</span><span class="o">.</span><span class="n">max</span><span class="p">()</span>
 <span class="n">df</span><span class="o">.</span><span class="n">min</span><span class="p">()</span>
 <span class="n">df</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span>
@@ -12424,6 +12595,49 @@ var element = $('#34ded481-e033-4987-9ac8-9f9aeef5fc3f');
 </pre></div>
 
 </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>   a  b  c
+0  1  4  0
+1  2  5  0
+2  3  6  0
+</pre>
+</div>
+</div>
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+
+
+
+ 
+ 
+<div id="5be00f22-be49-420d-bd14-4ecaa7606b86"></div>
+<div class="output_subarea output_widget_view ">
+<script type="text/javascript">
+var element = $('#5be00f22-be49-420d-bd14-4ecaa7606b86');
+</script>
+<script type="application/vnd.jupyter.widget-view+json">
+{"model_id": "e803bc6a7e6e473da24da2c5e272f5cf", "version_major": 2, "version_minor": 0}
+</script>
+</div>
+
+</div>
+
 </div>
 </div>
 
@@ -12441,7 +12655,7 @@ var element = $('#34ded481-e033-4987-9ac8-9f9aeef5fc3f');
 </div></section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[14]:</div>
+<div class="prompt input_prompt">In&nbsp;[21]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">IPython.display</span> <span class="k">import</span> <span class="n">display</span><span class="p">,</span> <span class="n">HTML</span>
@@ -12471,13 +12685,13 @@ var element = $('#34ded481-e033-4987-9ac8-9f9aeef5fc3f');
 
  
  
-<div id="9838fdff-3d52-47f0-91d3-96468bf2d85b"></div>
+<div id="00b1aa8d-c30a-4229-82f6-bfe9fe660d00"></div>
 <div class="output_subarea output_widget_view ">
 <script type="text/javascript">
-var element = $('#9838fdff-3d52-47f0-91d3-96468bf2d85b');
+var element = $('#00b1aa8d-c30a-4229-82f6-bfe9fe660d00');
 </script>
 <script type="application/vnd.jupyter.widget-view+json">
-{"model_id": "c9b81a20310545f08935a39904c3f1e1", "version_major": 2, "version_minor": 0}
+{"model_id": "8d19909f65a24072aeb19afafd12b7c9", "version_major": 2, "version_minor": 0}
 </script>
 </div>
 
@@ -12507,6 +12721,7 @@ var element = $('#9838fdff-3d52-47f0-91d3-96468bf2d85b');
       <th></th>
       <th>a</th>
       <th>b</th>
+      <th>c</th>
     </tr>
   </thead>
   <tbody>
@@ -12514,16 +12729,19 @@ var element = $('#9838fdff-3d52-47f0-91d3-96468bf2d85b');
       <th>0</th>
       <td>1</td>
       <td>4</td>
+      <td>0</td>
     </tr>
     <tr>
       <th>1</th>
       <td>2</td>
       <td>5</td>
+      <td>0</td>
     </tr>
     <tr>
       <th>2</th>
       <td>3</td>
       <td>6</td>
+      <td>0</td>
     </tr>
   </tbody>
 </table>
@@ -12537,7 +12755,7 @@ var element = $('#9838fdff-3d52-47f0-91d3-96468bf2d85b');
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>Display can also
+<pre>Display can also print text
 </pre>
 </div>
 </div>
@@ -12565,13 +12783,13 @@ var element = $('#9838fdff-3d52-47f0-91d3-96468bf2d85b');
 
  
  
-<div id="1cc5019f-ac4e-4816-8109-7a4f124403c1"></div>
+<div id="7b2f8f59-f8d5-48e9-a509-a72d5d54855d"></div>
 <div class="output_subarea output_widget_view ">
 <script type="text/javascript">
-var element = $('#1cc5019f-ac4e-4816-8109-7a4f124403c1');
+var element = $('#7b2f8f59-f8d5-48e9-a509-a72d5d54855d');
 </script>
 <script type="application/vnd.jupyter.widget-view+json">
-{"model_id": "40cb8943e666422b8f159b6cfebf2889", "version_major": 2, "version_minor": 0}
+{"model_id": "465c5925a61d4b518ea946eb3a8f5428", "version_major": 2, "version_minor": 0}
 </script>
 </div>
 
@@ -12602,7 +12820,7 @@ var element = $('#1cc5019f-ac4e-4816-8109-7a4f124403c1');
 </div></section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[22]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#Creation of a dataframe without an index</span>
@@ -12618,23 +12836,202 @@ var element = $('#1cc5019f-ac4e-4816-8109-7a4f124403c1');
 </div>
 </div>
 
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>dfCity before the cration of the index
+</pre>
+</div>
+</div>
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+
+
+
+ 
+ 
+<div id="4f7da381-654e-47cd-9eed-ebdb2d6b4aad"></div>
+<div class="output_subarea output_widget_view ">
+<script type="text/javascript">
+var element = $('#4f7da381-654e-47cd-9eed-ebdb2d6b4aad');
+</script>
+<script type="application/vnd.jupyter.widget-view+json">
+{"model_id": "5eda61f9f253471aa7e79f4a777df3f6", "version_major": 2, "version_minor": 0}
+</script>
+</div>
+
+</div>
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+
+
+
+ 
+ 
+<div id="f88c7199-6cae-4d4c-b184-30ed52ffc877"></div>
+<div class="output_subarea output_widget_view ">
+<script type="text/javascript">
+var element = $('#f88c7199-6cae-4d4c-b184-30ed52ffc877');
+</script>
+<script type="application/vnd.jupyter.widget-view+json">
+{"model_id": "c78b7eb5bbc94722a2e15e77748438ef", "version_major": 2, "version_minor": 0}
+</script>
+</div>
+
+</div>
+
+</div>
+</div>
+
 </div></section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[25]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#Selecting column by name</span>
+<span class="n">display</span><span class="p">(</span><span class="n">df</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Selection of a column by name&#39;</span><span class="p">)</span>
 <span class="n">display</span><span class="p">(</span><span class="n">df</span><span class="p">[[</span><span class="s1">&#39;a&#39;</span><span class="p">]])</span>
 <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Selectig using loc&#39;</span><span class="p">)</span>
 <span class="n">display</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
-<span class="c1">#Select column by index</span>
+<span class="c1">#Select column by position</span>
 <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Print of the second colum&#39;</span><span class="p">)</span>
 <span class="n">display</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">iloc</span><span class="p">[:,</span><span class="mi">1</span><span class="p">])</span>
 </pre></div>
 
 </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+
+
+
+ 
+ 
+<div id="7072e57f-f358-49c7-b363-69642cce4730"></div>
+<div class="output_subarea output_widget_view ">
+<script type="text/javascript">
+var element = $('#7072e57f-f358-49c7-b363-69642cce4730');
+</script>
+<script type="application/vnd.jupyter.widget-view+json">
+{"model_id": "9cb9832e33d04186bc013ab46d56468e", "version_major": 2, "version_minor": 0}
+</script>
+</div>
+
+</div>
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Selection of a column by name
+</pre>
+</div>
+</div>
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+
+
+
+ 
+ 
+<div id="d03bd897-2569-41d7-ae86-0f4a341e2be4"></div>
+<div class="output_subarea output_widget_view ">
+<script type="text/javascript">
+var element = $('#d03bd897-2569-41d7-ae86-0f4a341e2be4');
+</script>
+<script type="application/vnd.jupyter.widget-view+json">
+{"model_id": "dad00caaef6a48cfb2457dc411dc4452", "version_major": 2, "version_minor": 0}
+</script>
+</div>
+
+</div>
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Selectig using loc
+</pre>
+</div>
+</div>
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+
+
+<div class="output_text output_subarea ">
+<pre>a    2
+b    5
+c    0
+Name: 1, dtype: int64</pre>
+</div>
+
+</div>
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Print of the second colum
+</pre>
+</div>
+</div>
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+
+
+<div class="output_text output_subarea ">
+<pre>0    4
+1    5
+2    6
+Name: b, dtype: int64</pre>
+</div>
+
+</div>
+
 </div>
 </div>
 
@@ -12650,7 +13047,7 @@ var element = $('#1cc5019f-ac4e-4816-8109-7a4f124403c1');
 </div><div class="fragment">
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[15]:</div>
+<div class="prompt input_prompt">In&nbsp;[26]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">display</span><span class="p">(</span><span class="n">df2</span><span class="p">)</span>
@@ -12677,13 +13074,13 @@ var element = $('#1cc5019f-ac4e-4816-8109-7a4f124403c1');
 
  
  
-<div id="c52dfa4a-f206-4d64-95f6-cda382fc512f"></div>
+<div id="2634583e-5fb9-498b-8f0f-08551035df71"></div>
 <div class="output_subarea output_widget_view ">
 <script type="text/javascript">
-var element = $('#c52dfa4a-f206-4d64-95f6-cda382fc512f');
+var element = $('#2634583e-5fb9-498b-8f0f-08551035df71');
 </script>
 <script type="application/vnd.jupyter.widget-view+json">
-{"model_id": "e1ff419f7fc342fd90a1dfd820ab5c00", "version_major": 2, "version_minor": 0}
+{"model_id": "f898afd8111a4b29b0a61cfb5c776383", "version_major": 2, "version_minor": 0}
 </script>
 </div>
 
@@ -12784,22 +13181,114 @@ Name: cobra, dtype: int64</pre>
 </div></div><div class="fragment">
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[30]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">display</span><span class="p">(</span><span class="s1">&#39;Row cobra, all cols&#39;</span><span class="p">,</span><span class="n">df2</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="s1">&#39;cobra&#39;</span><span class="p">,:])</span>
 <span class="n">display</span><span class="p">(</span><span class="s1">&#39;Rows cobra and sidewinder, columns max speed&#39;</span><span class="p">,</span><span class="n">df2</span><span class="o">.</span><span class="n">loc</span><span class="p">[[</span><span class="s1">&#39;cobra&#39;</span><span class="p">,</span><span class="s1">&#39;sidewinder&#39;</span><span class="p">],</span><span class="s1">&#39;max_speed&#39;</span><span class="p">])</span>
-<span class="n">display</span><span class="p">(</span><span class="s1">&#39;Using iloc&#39;</span><span class="p">,</span><span class="n">df2</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="p">])</span>
+<span class="n">display</span><span class="p">(</span><span class="s1">&#39;Using iloc&#39;</span><span class="p">,</span><span class="n">df2</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="mi">2</span><span class="p">,</span><span class="mi">0</span><span class="p">])</span>
+<span class="c1">#NOTE 0:i i is excluded</span>
 </pre></div>
 
 </div>
 </div>
 </div>
 
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+
+
+<div class="output_text output_subarea ">
+<pre>&#39;Row cobra, all cols&#39;</pre>
+</div>
+
+</div>
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+
+
+<div class="output_text output_subarea ">
+<pre>max_speed    1
+shield       2
+Name: cobra, dtype: int64</pre>
+</div>
+
+</div>
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+
+
+<div class="output_text output_subarea ">
+<pre>&#39;Rows cobra and sidewinder, columns max speed&#39;</pre>
+</div>
+
+</div>
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+
+
+<div class="output_text output_subarea ">
+<pre>cobra         1
+sidewinder    7
+Name: max_speed, dtype: int64</pre>
+</div>
+
+</div>
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+
+
+<div class="output_text output_subarea ">
+<pre>&#39;Using iloc&#39;</pre>
+</div>
+
+</div>
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+
+
+<div class="output_text output_subarea ">
+<pre>cobra    1
+viper    4
+Name: max_speed, dtype: int64</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
 </div></div><div class="fragment">
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[17]:</div>
+<div class="prompt input_prompt">In&nbsp;[31]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">display</span><span class="p">(</span><span class="n">df</span><span class="p">)</span>
@@ -12830,13 +13319,13 @@ Name: cobra, dtype: int64</pre>
 
  
  
-<div id="8a3370e1-f286-44a0-b483-18fed95484ce"></div>
+<div id="c7261dc3-ebbb-4c0e-8d2c-df0909f1b750"></div>
 <div class="output_subarea output_widget_view ">
 <script type="text/javascript">
-var element = $('#8a3370e1-f286-44a0-b483-18fed95484ce');
+var element = $('#c7261dc3-ebbb-4c0e-8d2c-df0909f1b750');
 </script>
 <script type="application/vnd.jupyter.widget-view+json">
-{"model_id": "692c4ee3dd984663a459b628dc07ad9a", "version_major": 2, "version_minor": 0}
+{"model_id": "2b64f2a8f4ec4e18a508b535a5824e18", "version_major": 2, "version_minor": 0}
 </script>
 </div>
 
@@ -12863,8 +13352,9 @@ var element = $('#8a3370e1-f286-44a0-b483-18fed95484ce');
 
 
 <div class="output_text output_subarea ">
-<pre>a    3
-b    6
+<pre>a    1
+b    4
+c    0
 Name: 0, dtype: int64</pre>
 </div>
 
@@ -12893,7 +13383,8 @@ Name: 0, dtype: int64</pre>
 <div class="output_text output_subarea ">
 <pre>a    1
 b    4
-Name: 1, dtype: int64</pre>
+c    0
+Name: 0, dtype: int64</pre>
 </div>
 
 </div>
@@ -12919,13 +13410,13 @@ Name: 1, dtype: int64</pre>
 
  
  
-<div id="4f03299e-4aab-4e4a-b679-511425dfe48b"></div>
+<div id="30ffe9cf-df17-4efa-8983-20b187a4ed62"></div>
 <div class="output_subarea output_widget_view ">
 <script type="text/javascript">
-var element = $('#4f03299e-4aab-4e4a-b679-511425dfe48b');
+var element = $('#30ffe9cf-df17-4efa-8983-20b187a4ed62');
 </script>
 <script type="application/vnd.jupyter.widget-view+json">
-{"model_id": "d19598eca0724d59a69fa70b048d4a8d", "version_major": 2, "version_minor": 0}
+{"model_id": "68fa06e533fa4c5990e03e3e1ad5d141", "version_major": 2, "version_minor": 0}
 </script>
 </div>
 
@@ -12954,6 +13445,7 @@ var element = $('#4f03299e-4aab-4e4a-b679-511425dfe48b');
 <div class="output_text output_subarea ">
 <pre>a    3
 b    6
+c    0
 Name: 0, dtype: int64</pre>
 </div>
 
@@ -12982,6 +13474,7 @@ Name: 0, dtype: int64</pre>
 <div class="output_text output_subarea ">
 <pre>a    1
 b    4
+c    0
 Name: 1, dtype: int64</pre>
 </div>
 
@@ -13003,7 +13496,7 @@ This is valid also if you have 2 colum but one <strong>is the index</strong>.</p
 </div></section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[18]:</div>
+<div class="prompt input_prompt">In&nbsp;[32]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Original type&#39;</span><span class="p">,</span><span class="nb">type</span><span class="p">(</span><span class="n">df2</span><span class="p">))</span>
@@ -13061,53 +13554,207 @@ Name: shield, dtype: int64</pre>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="Drop-and-other-suff">Drop and other suff<a class="anchor-link" href="#Drop-and-other-suff">&#182;</a></h2><p>After the selction of columns and rows let's focus on how to <code>drop</code> a column (aka selct out) from a dataframe.</p>
-<p>We'll also se how to print a dataframe in a pretty way unsing <code>IPython.display</code>.</p>
 
 </div>
 </div>
-</div></section><section>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">IPython.display</span> <span class="k">import</span> <span class="n">display</span><span class="p">,</span> <span class="n">HTML</span>
-<span class="n">df</span><span class="o">=</span><span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">({</span><span class="s1">&#39;a&#39;</span><span class="p">:[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">],</span><span class="s1">&#39;b&#39;</span><span class="p">:[</span><span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">6</span><span class="p">]})</span>
-<span class="c1">#We can add a column afterward</span>
-<span class="n">df</span><span class="p">[</span><span class="s1">&#39;c&#39;</span><span class="p">]</span><span class="o">=</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">]</span>
-<span class="n">display</span><span class="p">(</span><span class="n">df</span><span class="p">)</span>
-<span class="c1">#Alternative</span>
-<span class="n">display</span><span class="p">(</span><span class="n">HTML</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">to_html</span><span class="p">()))</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
 </div><div class="fragment">
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[48]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#Let&#39;s drop c from df</span>
 <span class="n">df</span><span class="o">=</span><span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">({</span><span class="s1">&#39;a&#39;</span><span class="p">:[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">],</span><span class="s1">&#39;b&#39;</span><span class="p">:[</span><span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">6</span><span class="p">],</span><span class="s1">&#39;c&#39;</span><span class="p">:[</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">]})</span>
 <span class="n">df</span><span class="o">.</span><span class="n">drop</span><span class="p">([</span><span class="s1">&#39;c&#39;</span><span class="p">],</span><span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
-<span class="n">display</span><span class="p">(</span><span class="n">df</span><span class="p">)</span>
+<span class="n">display</span><span class="p">(</span><span class="s1">&#39;df after the drop of c&#39;</span><span class="p">,</span><span class="n">df</span><span class="p">)</span>
 <span class="n">df</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="n">columns</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;b&#39;</span><span class="p">],</span><span class="n">inplace</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
-<span class="n">display</span><span class="p">(</span><span class="n">df</span><span class="p">)</span>
+<span class="n">display</span><span class="p">(</span><span class="s1">&#39;df after the drop of b&#39;</span><span class="p">,</span><span class="n">df</span><span class="p">)</span>
 <span class="n">df</span><span class="o">.</span><span class="n">columns</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;aaa&#39;</span><span class="p">,</span><span class="s1">&#39;ccc&#39;</span><span class="p">]</span>
 <span class="n">display</span><span class="p">(</span><span class="n">df</span><span class="p">)</span>
+<span class="c1">#We can also drop rows</span>
+<span class="n">df</span><span class="p">[</span><span class="s1">&#39;nomi&#39;</span><span class="p">]</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;pippo&#39;</span><span class="p">,</span><span class="s1">&#39;pluto&#39;</span><span class="p">,</span><span class="s1">&#39;topolino&#39;</span><span class="p">]</span>
+<span class="n">df</span><span class="o">.</span><span class="n">set_index</span><span class="p">([</span><span class="s1">&#39;nomi&#39;</span><span class="p">],</span><span class="n">inplace</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">display</span><span class="p">(</span><span class="s1">&#39;df after the index definitio&#39;</span><span class="p">,</span><span class="n">df</span><span class="p">)</span>
+<span class="n">display</span><span class="p">(</span><span class="s1">&#39;df after the drop of the row with label pluto&#39;</span><span class="p">,</span><span class="n">df</span><span class="o">.</span><span class="n">drop</span><span class="p">([</span><span class="s1">&#39;pluto&#39;</span><span class="p">],</span><span class="n">axis</span><span class="o">=</span><span class="mi">0</span><span class="p">))</span>
 </pre></div>
 
 </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+
+
+<div class="output_text output_subarea ">
+<pre>&#39;df after the drop of c&#39;</pre>
+</div>
+
+</div>
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+
+
+
+ 
+ 
+<div id="cdfa5530-fa81-492a-b15b-39d203fd0b26"></div>
+<div class="output_subarea output_widget_view ">
+<script type="text/javascript">
+var element = $('#cdfa5530-fa81-492a-b15b-39d203fd0b26');
+</script>
+<script type="application/vnd.jupyter.widget-view+json">
+{"model_id": "a545e361ef5d4734b2ce0cfb3bad4b2f", "version_major": 2, "version_minor": 0}
+</script>
+</div>
+
+</div>
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+
+
+<div class="output_text output_subarea ">
+<pre>&#39;df after the drop of b&#39;</pre>
+</div>
+
+</div>
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+
+
+
+ 
+ 
+<div id="f69fbde4-b043-4433-bc9d-de2f3ed60b4d"></div>
+<div class="output_subarea output_widget_view ">
+<script type="text/javascript">
+var element = $('#f69fbde4-b043-4433-bc9d-de2f3ed60b4d');
+</script>
+<script type="application/vnd.jupyter.widget-view+json">
+{"model_id": "8b8c1cdba71846748e72c565c0efa899", "version_major": 2, "version_minor": 0}
+</script>
+</div>
+
+</div>
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+
+
+
+ 
+ 
+<div id="a7fc54a5-a7d7-41c8-b379-9c71f04b24cb"></div>
+<div class="output_subarea output_widget_view ">
+<script type="text/javascript">
+var element = $('#a7fc54a5-a7d7-41c8-b379-9c71f04b24cb');
+</script>
+<script type="application/vnd.jupyter.widget-view+json">
+{"model_id": "818aaa8499de4adabb48263048f9f58d", "version_major": 2, "version_minor": 0}
+</script>
+</div>
+
+</div>
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+
+
+<div class="output_text output_subarea ">
+<pre>&#39;df after the index definitio&#39;</pre>
+</div>
+
+</div>
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+
+
+
+ 
+ 
+<div id="b3c12807-6e50-4ae7-a483-68f6edcdaf9e"></div>
+<div class="output_subarea output_widget_view ">
+<script type="text/javascript">
+var element = $('#b3c12807-6e50-4ae7-a483-68f6edcdaf9e');
+</script>
+<script type="application/vnd.jupyter.widget-view+json">
+{"model_id": "8374a5907d144686ab9e1d0e1b1cc3d5", "version_major": 2, "version_minor": 0}
+</script>
+</div>
+
+</div>
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+
+
+<div class="output_text output_subarea ">
+<pre>&#39;df after the drop of the row with label 2&#39;</pre>
+</div>
+
+</div>
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+
+
+
+ 
+ 
+<div id="d15892b0-2cc7-4c9e-b09f-13fe272658ae"></div>
+<div class="output_subarea output_widget_view ">
+<script type="text/javascript">
+var element = $('#d15892b0-2cc7-4c9e-b09f-13fe272658ae');
+</script>
+<script type="application/vnd.jupyter.widget-view+json">
+{"model_id": "a888dd2fd4db465e954efda2199ee893", "version_major": 2, "version_minor": 0}
+</script>
+</div>
+
+</div>
+
 </div>
 </div>
 
 </div></div><div class="fragment">
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[50]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">dfNan</span><span class="o">=</span><span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">([[</span><span class="mi">1</span><span class="p">,</span><span class="n">np</span><span class="o">.</span><span class="n">nan</span><span class="p">,</span><span class="s1">&#39;pippo&#39;</span><span class="p">],[</span><span class="mi">2</span><span class="p">,</span><span class="s1">&#39;b&#39;</span><span class="p">,</span><span class="s1">&#39;pluto&#39;</span><span class="p">],[</span><span class="mi">3</span><span class="p">,</span><span class="s1">&#39;c&#39;</span><span class="p">,</span><span class="s1">&#39;topolino&#39;</span><span class="p">],[</span><span class="n">np</span><span class="o">.</span><span class="n">nan</span><span class="p">,</span><span class="n">np</span><span class="o">.</span><span class="n">nan</span><span class="p">,</span><span class="s1">&#39;minnie&#39;</span><span class="p">]])</span>
@@ -13125,6 +13772,211 @@ Name: shield, dtype: int64</pre>
 </div>
 </div>
 
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>dropna with orig
+</pre>
+</div>
+</div>
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+
+
+
+ 
+ 
+<div id="cd8de55c-027c-47af-874e-0a5607ee9b7c"></div>
+<div class="output_subarea output_widget_view ">
+<script type="text/javascript">
+var element = $('#cd8de55c-027c-47af-874e-0a5607ee9b7c');
+</script>
+<script type="application/vnd.jupyter.widget-view+json">
+{"model_id": "e1e479dcf7d44a0a9ee58bd9ec400a9f", "version_major": 2, "version_minor": 0}
+</script>
+</div>
+
+</div>
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>dropna with nothing
+</pre>
+</div>
+</div>
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+
+
+
+ 
+ 
+<div id="eb63da6d-1e1d-4a90-83b0-e1e65237976f"></div>
+<div class="output_subarea output_widget_view ">
+<script type="text/javascript">
+var element = $('#eb63da6d-1e1d-4a90-83b0-e1e65237976f');
+</script>
+<script type="application/vnd.jupyter.widget-view+json">
+{"model_id": "22c6630eafdc4bc5b5b40b3d58d5528a", "version_major": 2, "version_minor": 0}
+</script>
+</div>
+
+</div>
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>dropna with axis=0
+</pre>
+</div>
+</div>
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+
+
+
+ 
+ 
+<div id="fbc8cc60-4fee-4c9d-b397-fea85ba51df5"></div>
+<div class="output_subarea output_widget_view ">
+<script type="text/javascript">
+var element = $('#fbc8cc60-4fee-4c9d-b397-fea85ba51df5');
+</script>
+<script type="application/vnd.jupyter.widget-view+json">
+{"model_id": "bcbc325504984914b9f6c01af91778aa", "version_major": 2, "version_minor": 0}
+</script>
+</div>
+
+</div>
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>dropna with axis=1
+</pre>
+</div>
+</div>
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+
+
+
+ 
+ 
+<div id="bc54fd65-45cf-4151-ab49-4e9561d9e5c3"></div>
+<div class="output_subarea output_widget_view ">
+<script type="text/javascript">
+var element = $('#bc54fd65-45cf-4151-ab49-4e9561d9e5c3');
+</script>
+<script type="application/vnd.jupyter.widget-view+json">
+{"model_id": "8ba30b6edffe480cb04a186fde52fc92", "version_major": 2, "version_minor": 0}
+</script>
+</div>
+
+</div>
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>dropna with how=any
+</pre>
+</div>
+</div>
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+
+
+
+ 
+ 
+<div id="d16719ea-2a90-49be-9131-108f7ffc3d0d"></div>
+<div class="output_subarea output_widget_view ">
+<script type="text/javascript">
+var element = $('#d16719ea-2a90-49be-9131-108f7ffc3d0d');
+</script>
+<script type="application/vnd.jupyter.widget-view+json">
+{"model_id": "1b12b6ef43f9493c872f20d973e3611b", "version_major": 2, "version_minor": 0}
+</script>
+</div>
+
+</div>
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>dropna with how=all
+</pre>
+</div>
+</div>
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+
+
+
+ 
+ 
+<div id="714f62cf-8d75-4513-86f3-332e34f6b051"></div>
+<div class="output_subarea output_widget_view ">
+<script type="text/javascript">
+var element = $('#714f62cf-8d75-4513-86f3-332e34f6b051');
+</script>
+<script type="application/vnd.jupyter.widget-view+json">
+{"model_id": "6f4ca8613d3a4375a0e97d6a92ef884b", "version_major": 2, "version_minor": 0}
+</script>
+</div>
+
+</div>
+
+</div>
+</div>
+
 </div></div></section></section><section><section>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
@@ -13139,7 +13991,7 @@ Name: shield, dtype: int64</pre>
 </div></section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[51]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">dfLeft</span><span class="o">=</span><span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">({</span><span class="s1">&#39;key&#39;</span><span class="p">:[</span><span class="s1">&#39;a&#39;</span><span class="p">,</span><span class="s1">&#39;b&#39;</span><span class="p">,</span><span class="s1">&#39;d&#39;</span><span class="p">,</span><span class="s1">&#39;f&#39;</span><span class="p">],</span><span class="s1">&#39;cost&#39;</span><span class="p">:[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">]})</span>
@@ -13161,6 +14013,68 @@ Name: shield, dtype: int64</pre>
 </div>
 </div>
 
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+<div class="output_subarea output_text output_error">
+<pre>
+<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
+<span class="ansi-red-fg">ValueError</span>                                Traceback (most recent call last)
+<span class="ansi-green-fg">&lt;ipython-input-51-3acc4703b8ca&gt;</span> in <span class="ansi-cyan-fg">&lt;module&gt;</span><span class="ansi-blue-fg">()</span>
+<span class="ansi-green-intense-fg ansi-bold">      1</span> dfLeft<span class="ansi-blue-fg">=</span>pd<span class="ansi-blue-fg">.</span>DataFrame<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">{</span><span class="ansi-blue-fg">&#39;key&#39;</span><span class="ansi-blue-fg">:</span><span class="ansi-blue-fg">[</span><span class="ansi-blue-fg">&#39;a&#39;</span><span class="ansi-blue-fg">,</span><span class="ansi-blue-fg">&#39;b&#39;</span><span class="ansi-blue-fg">,</span><span class="ansi-blue-fg">&#39;d&#39;</span><span class="ansi-blue-fg">,</span><span class="ansi-blue-fg">&#39;f&#39;</span><span class="ansi-blue-fg">]</span><span class="ansi-blue-fg">,</span><span class="ansi-blue-fg">&#39;cost&#39;</span><span class="ansi-blue-fg">:</span><span class="ansi-blue-fg">[</span><span class="ansi-cyan-fg">1</span><span class="ansi-blue-fg">,</span><span class="ansi-cyan-fg">2</span><span class="ansi-blue-fg">,</span><span class="ansi-cyan-fg">3</span><span class="ansi-blue-fg">,</span><span class="ansi-cyan-fg">4</span><span class="ansi-blue-fg">]</span><span class="ansi-blue-fg">}</span><span class="ansi-blue-fg">)</span>
+<span class="ansi-green-intense-fg ansi-bold">      2</span> dfRight<span class="ansi-blue-fg">=</span>pd<span class="ansi-blue-fg">.</span>DataFrame<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">{</span><span class="ansi-blue-fg">&#39;key&#39;</span><span class="ansi-blue-fg">:</span><span class="ansi-blue-fg">[</span><span class="ansi-blue-fg">&#39;a&#39;</span><span class="ansi-blue-fg">,</span><span class="ansi-blue-fg">&#39;b&#39;</span><span class="ansi-blue-fg">,</span><span class="ansi-blue-fg">&#39;c&#39;</span><span class="ansi-blue-fg">,</span><span class="ansi-blue-fg">&#39;f&#39;</span><span class="ansi-blue-fg">]</span><span class="ansi-blue-fg">,</span><span class="ansi-blue-fg">&#39;revenue&#39;</span><span class="ansi-blue-fg">:</span><span class="ansi-blue-fg">[</span><span class="ansi-cyan-fg">10</span><span class="ansi-blue-fg">,</span><span class="ansi-cyan-fg">20</span><span class="ansi-blue-fg">,</span><span class="ansi-cyan-fg">30</span><span class="ansi-blue-fg">,</span><span class="ansi-cyan-fg">40</span><span class="ansi-blue-fg">]</span><span class="ansi-blue-fg">}</span><span class="ansi-blue-fg">)</span>
+<span class="ansi-green-fg">----&gt; 3</span><span class="ansi-red-fg"> </span>display<span class="ansi-blue-fg">(</span>dfLeft<span class="ansi-blue-fg">.</span>join<span class="ansi-blue-fg">(</span>dfRight<span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">)</span><span class="ansi-red-fg">#lsuffix=&#39;_l&#39;,rsuffix=&#39;_r&#39;</span>
+<span class="ansi-green-intense-fg ansi-bold">      4</span> dfRight<span class="ansi-blue-fg">.</span>set_index<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">&#39;key&#39;</span><span class="ansi-blue-fg">,</span>inplace<span class="ansi-blue-fg">=</span><span class="ansi-green-fg">True</span><span class="ansi-blue-fg">)</span>
+<span class="ansi-green-intense-fg ansi-bold">      5</span> display<span class="ansi-blue-fg">(</span>dfLeft<span class="ansi-blue-fg">.</span>join<span class="ansi-blue-fg">(</span>dfRight<span class="ansi-blue-fg">,</span>on<span class="ansi-blue-fg">=</span><span class="ansi-blue-fg">&#39;key&#39;</span><span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">)</span>
+
+<span class="ansi-green-fg">/anaconda3/lib/python3.6/site-packages/pandas/core/frame.py</span> in <span class="ansi-cyan-fg">join</span><span class="ansi-blue-fg">(self, other, on, how, lsuffix, rsuffix, sort)</span>
+<span class="ansi-green-intense-fg ansi-bold">   6324</span>         <span class="ansi-red-fg"># For SparseDataFrame&#39;s benefit</span>
+<span class="ansi-green-intense-fg ansi-bold">   6325</span>         return self._join_compat(other, on=on, how=how, lsuffix=lsuffix,
+<span class="ansi-green-fg">-&gt; 6326</span><span class="ansi-red-fg">                                  rsuffix=rsuffix, sort=sort)
+</span><span class="ansi-green-intense-fg ansi-bold">   6327</span> 
+<span class="ansi-green-intense-fg ansi-bold">   6328</span>     def _join_compat(self, other, on=None, how=&#39;left&#39;, lsuffix=&#39;&#39;, rsuffix=&#39;&#39;,
+
+<span class="ansi-green-fg">/anaconda3/lib/python3.6/site-packages/pandas/core/frame.py</span> in <span class="ansi-cyan-fg">_join_compat</span><span class="ansi-blue-fg">(self, other, on, how, lsuffix, rsuffix, sort)</span>
+<span class="ansi-green-intense-fg ansi-bold">   6339</span>             return merge(self, other, left_on=on, how=how,
+<span class="ansi-green-intense-fg ansi-bold">   6340</span>                          left_index<span class="ansi-blue-fg">=</span>on <span class="ansi-green-fg">is</span> <span class="ansi-green-fg">None</span><span class="ansi-blue-fg">,</span> right_index<span class="ansi-blue-fg">=</span><span class="ansi-green-fg">True</span><span class="ansi-blue-fg">,</span>
+<span class="ansi-green-fg">-&gt; 6341</span><span class="ansi-red-fg">                          suffixes=(lsuffix, rsuffix), sort=sort)
+</span><span class="ansi-green-intense-fg ansi-bold">   6342</span>         <span class="ansi-green-fg">else</span><span class="ansi-blue-fg">:</span>
+<span class="ansi-green-intense-fg ansi-bold">   6343</span>             <span class="ansi-green-fg">if</span> on <span class="ansi-green-fg">is</span> <span class="ansi-green-fg">not</span> <span class="ansi-green-fg">None</span><span class="ansi-blue-fg">:</span>
+
+<span class="ansi-green-fg">/anaconda3/lib/python3.6/site-packages/pandas/core/reshape/merge.py</span> in <span class="ansi-cyan-fg">merge</span><span class="ansi-blue-fg">(left, right, how, on, left_on, right_on, left_index, right_index, sort, suffixes, copy, indicator, validate)</span>
+<span class="ansi-green-intense-fg ansi-bold">     59</span>                          copy<span class="ansi-blue-fg">=</span>copy<span class="ansi-blue-fg">,</span> indicator<span class="ansi-blue-fg">=</span>indicator<span class="ansi-blue-fg">,</span>
+<span class="ansi-green-intense-fg ansi-bold">     60</span>                          validate=validate)
+<span class="ansi-green-fg">---&gt; 61</span><span class="ansi-red-fg">     </span><span class="ansi-green-fg">return</span> op<span class="ansi-blue-fg">.</span>get_result<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">)</span>
+<span class="ansi-green-intense-fg ansi-bold">     62</span> 
+<span class="ansi-green-intense-fg ansi-bold">     63</span> 
+
+<span class="ansi-green-fg">/anaconda3/lib/python3.6/site-packages/pandas/core/reshape/merge.py</span> in <span class="ansi-cyan-fg">get_result</span><span class="ansi-blue-fg">(self)</span>
+<span class="ansi-green-intense-fg ansi-bold">    571</span> 
+<span class="ansi-green-intense-fg ansi-bold">    572</span>         llabels, rlabels = items_overlap_with_suffix(ldata.items, lsuf,
+<span class="ansi-green-fg">--&gt; 573</span><span class="ansi-red-fg">                                                      rdata.items, rsuf)
+</span><span class="ansi-green-intense-fg ansi-bold">    574</span> 
+<span class="ansi-green-intense-fg ansi-bold">    575</span>         lindexers <span class="ansi-blue-fg">=</span> <span class="ansi-blue-fg">{</span><span class="ansi-cyan-fg">1</span><span class="ansi-blue-fg">:</span> left_indexer<span class="ansi-blue-fg">}</span> <span class="ansi-green-fg">if</span> left_indexer <span class="ansi-green-fg">is</span> <span class="ansi-green-fg">not</span> <span class="ansi-green-fg">None</span> <span class="ansi-green-fg">else</span> <span class="ansi-blue-fg">{</span><span class="ansi-blue-fg">}</span>
+
+<span class="ansi-green-fg">/anaconda3/lib/python3.6/site-packages/pandas/core/internals.py</span> in <span class="ansi-cyan-fg">items_overlap_with_suffix</span><span class="ansi-blue-fg">(left, lsuffix, right, rsuffix)</span>
+<span class="ansi-green-intense-fg ansi-bold">   5242</span>         <span class="ansi-green-fg">if</span> <span class="ansi-green-fg">not</span> lsuffix <span class="ansi-green-fg">and</span> <span class="ansi-green-fg">not</span> rsuffix<span class="ansi-blue-fg">:</span>
+<span class="ansi-green-intense-fg ansi-bold">   5243</span>             raise ValueError(&#39;columns overlap but no suffix specified: &#39;
+<span class="ansi-green-fg">-&gt; 5244</span><span class="ansi-red-fg">                              &#39;{rename}&#39;.format(rename=to_rename))
+</span><span class="ansi-green-intense-fg ansi-bold">   5245</span> 
+<span class="ansi-green-intense-fg ansi-bold">   5246</span>         <span class="ansi-green-fg">def</span> lrenamer<span class="ansi-blue-fg">(</span>x<span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">:</span>
+
+<span class="ansi-red-fg">ValueError</span>: columns overlap but no suffix specified: Index([&#39;key&#39;], dtype=&#39;object&#39;)</pre>
+</div>
+</div>
+
+</div>
+</div>
+
 </div></section></section><section><section>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
@@ -13175,7 +14089,7 @@ Name: shield, dtype: int64</pre>
 </div></section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[52]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#First we have to remove the index from dfRight</span>
@@ -13186,10 +14100,39 @@ Name: shield, dtype: int64</pre>
 </div>
 </div>
 
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+
+
+
+ 
+ 
+<div id="8bedcb53-8585-43b6-a799-0a3201c2aa9e"></div>
+<div class="output_subarea output_widget_view ">
+<script type="text/javascript">
+var element = $('#8bedcb53-8585-43b6-a799-0a3201c2aa9e');
+</script>
+<script type="application/vnd.jupyter.widget-view+json">
+{"model_id": "366a49d5d7ec40baa4a2326caa17e2d3", "version_major": 2, "version_minor": 0}
+</script>
+</div>
+
+</div>
+
+</div>
+</div>
+
 </div><div class="fragment">
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[53]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="o">%%</span>R <span class="o">-</span>i dfLeft<span class="p">,</span>dfRight
@@ -13199,6 +14142,57 @@ dfLeft <span class="o">%&gt;%</span>
 </pre></div>
 
 </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stderr output_text">
+<pre>/anaconda3/lib/python3.6/site-packages/rpy2/rinterface/__init__.py:145: RRuntimeWarning: 
+Attaching package: ‘dplyr’
+
+
+  warnings.warn(x, RRuntimeWarning)
+/anaconda3/lib/python3.6/site-packages/rpy2/rinterface/__init__.py:145: RRuntimeWarning: The following objects are masked from ‘package:stats’:
+
+    filter, lag
+
+
+  warnings.warn(x, RRuntimeWarning)
+/anaconda3/lib/python3.6/site-packages/rpy2/rinterface/__init__.py:145: RRuntimeWarning: The following objects are masked from ‘package:base’:
+
+    intersect, setdiff, setequal, union
+
+
+  warnings.warn(x, RRuntimeWarning)
+</pre>
+</div>
+</div>
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+
+
+<div class="output_text output_subarea ">
+<pre>  key cost revenue
+1   a    1      10
+2   b    2      20
+3   f    4      40
+</pre>
+</div>
+
+</div>
+
 </div>
 </div>
 
